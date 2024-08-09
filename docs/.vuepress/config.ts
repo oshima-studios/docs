@@ -30,10 +30,13 @@ export default defineUserConfig({
         externalLinkIcon: true,
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: true,
-	footer: {
-        message: "<a href='https://www.gnu.org/licenses/agpl-3.0' target='_blank'>AGPL-3.0 license</a>",
-		copyright: "Copyright © 2022-至今 <a href='https://milimoe.com' target='_blank'>Milimoe</a> & <a href='https://github.com/oshima-studios' target='_blank'>Oshima Studios</a>."
-	}
+	    footer: {
+            message: "<a href='https://www.gnu.org/licenses/agpl-3.0' target='_blank'>AGPL-3.0 license</a>",
+		    copyright: "Copyright © 2022-至今 <a href='https://milimoe.com' target='_blank'>Milimoe</a> & <a href='https://github.com/oshima-studios' target='_blank'>Oshima Studios</a>."
+        },
+        social: [
+            { icon: 'github', link: 'https://github.com/oshima-studios' }
+        ]
     }),
     bundler: viteBundler(),
     plugins: []
